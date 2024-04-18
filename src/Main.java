@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Main juego = new Main();
+
         int opcion;
 
         do {
@@ -18,12 +18,12 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    juego = new Main();
+                    System.out.println("Benvingut al meu joc.");
                     break;
                 case 2:
-                    //
+                    System.out.println("Benvingut a la teva partida anterior.");
                 case 3:
-                    //
+                    System.out.println("Aqui pots fer la configuració del joc.");
                 case 4:
                     System.out.println("Adéu!!");
                     break;
