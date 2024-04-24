@@ -34,7 +34,4 @@ public class Main {
 
         while (opcion != 4);
     }
-    public static void TUI(){
-
-    }
 }
