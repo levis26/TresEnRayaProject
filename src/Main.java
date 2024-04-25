@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Joc joc = new Joc();
+        TUI tui = new TUI();
 
         int opcion;
 
@@ -18,7 +20,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Benvingut al meu joc.");
+                    joc.novaPartida();
                     break;
                 case 2:
                     System.out.println("Benvingut a la teva partida anterior.");
