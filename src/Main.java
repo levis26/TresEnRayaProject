@@ -24,8 +24,10 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Benvingut a la teva partida anterior.");
+                    break;
                 case 3:
                     System.out.println("Aqui pots fer la configuració del joc.");
+                    break;
                 case 4:
                     System.out.println("Adéu!!");
                     break;

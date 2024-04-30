@@ -1,3 +1,5 @@
+import jdk.jshell.spi.ExecutionControl;
+
 public class Joc {
 
     private char taulell;
@@ -10,7 +12,12 @@ public class Joc {
     public short getTorn() {
         return torn;
     }
-    public static char[][] novaPartida() {
+
+    public void novaPartida() {
+        torn = 1;
+
+        //throw new UnsupportedOperationException();
+
         //empezamos a rellenar el tablero
 
         /* int mida = 3;
@@ -28,20 +35,16 @@ public class Joc {
             }
             System.out.println(" ");
         }
+        return tresenlinea; */
 
-        return tresenlinea;
-    }
-     */
-
-        return novaPartida();
     }
 
     public static char jugar(short fila, short columna) {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     public static boolean jugadaGuanyadora(short fila, short columna) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 }
 
