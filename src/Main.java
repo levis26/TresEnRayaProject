@@ -30,19 +30,6 @@ public class Main {
 
     private static void novaPartida() {
         joc.novaPartida();
-        jugarPartida();
-    }
-
-    private static void carregarPartida() {
-
-        jugarPartida();
-    }
-
-    private static void configuracio() {
-
-    }
-
-    private static void jugarPartida() {
         boolean partidaAcabada = false;
         while (!partidaAcabada) {
             tui.mostrarTaulell(joc.getTaulell(), joc.getTorn());
@@ -50,7 +37,7 @@ public class Main {
             joc.jugar(jugada[0], String.valueOf(jugada[1]));
             if (joc.jugadaGuanyadora(jugada[0], jugada[1])) {
                 tui.mostrarTaulell(joc.getTaulell(), joc.getTorn());
-                short guanyador = (joc.getTorn() == 0) ? (short) 1 : (short) 0;
+                short guanyador = (joc.getTorn() % 2 == 0) ? (short) 1 : (short) 0;
                 tui.fiDePartida(guanyador);
                 partidaAcabada = true;
             } else if (joc.getTorn() == 9) {
@@ -59,5 +46,13 @@ public class Main {
                 partidaAcabada = true;
             }
         }
+    }
+
+    private static void carregarPartida() {
+        // Implementar la lógica para cargar una partida guardada
+    }
+
+    private static void configuracio() {
+        // Implementar la lógica para mostrar el menú de configuración
     }
 }
