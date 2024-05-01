@@ -25,11 +25,12 @@ public class Joc {
     }
 
     public void jugar(short fila, String columna) {
-        short col = Short.parseShort(columna);
+        //throw new ExecutionControl.NotImplementedException();
+        /*short col = Short.parseShort(columna);
         if (taulell[fila][col] == '-') {
             taulell[fila][col] = (torn % 2 == 0) ? 'X' : 'O';
             torn++;
-        }
+        }*/
     }
 
     public boolean jugadaGuanyadora(short fila, short columna) {
