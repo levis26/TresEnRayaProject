@@ -1,37 +1,63 @@
 import java.util.Scanner;
 
 public class Main {
+    private static TUI tui = new TUI();
+    private static Joc joc = new Joc();
+    private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int opcion;
-
-        do {
-            System.out.println("\nMenú:");
-            System.out.println("1. Nova partida");
-            System.out.println("2. Carregar partida");
-            System.out.println("3. Configuració");
-            System.out.println("4. Sortir");
-            System.out.print("Selecciona una opció: ");
-            opcion = sc.nextInt();
-
-            switch (opcion) {
+        boolean sortir = false;
+        while (!sortir) {
+            int opcio = tui.mostrarMenu();
+            switch (opcio) {
                 case 1:
-                    System.out.println("Benvingut al meu joc.");
+                    novaPartida();
                     break;
                 case 2:
-                    System.out.println("Benvingut a la teva partida anterior.");
+                    carregarPartida();
+                    break;
                 case 3:
-                    System.out.println("Aqui pots fer la configuració del joc.");
+                    configuracio();
+                    break;
                 case 4:
-                    System.out.println("Adéu!!");
+                    sortir = true;
                     break;
                 default:
-                    System.out.println("Opció invàlica");
+                    System.out.println("Opció invàlida.");
             }
         }
+    }
 
-        while (opcion != 4);
+    private static void novaPartida() {
+        joc.novaPartida();
+        jugarPartida();
+    }
+
+    private static void carregarPartida() {
+
+        jugarPartida();
+    }
+
+    private static void configuracio() {
+
+    }
+
+    private static void jugarPartida() {
+        boolean partidaAcabada = false;
+        while (!partidaAcabada) {
+            tui.mostrarTaulell(joc.getTaulell(), joc.getTorn());
+            short[] jugada = tui.recollirJugada();
+            joc.jugar(jugada[0], String.valueOf(jugada[1]));
+            if (joc.jugadaGuanyadora(jugada[0], jugada[1])) {
+                tui.mostrarTaulell(joc.getTaulell(), joc.getTorn());
+                short guanyador = (joc.getTorn() == 0) ? (short) 1 : (short) 0;
+                tui.fiDePartida(guanyador);
+                partidaAcabada = true;
+            } else if (joc.getTorn() == 9) {
+                tui.mostrarTaulell(joc.getTaulell(), joc.getTorn());
+                tui.fiDePartida((short) -1);
+                partidaAcabada = true;
+            }
+        }
     }
 }
