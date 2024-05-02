@@ -16,11 +16,9 @@ public class Joc {
     public void novaPartida() {
         torn = 1;
 
-        //throw new UnsupportedOperationException();
-
         //empezamos a rellenar el tablero
 
-        /* int mida = 3;
+        int mida = 3;
         char[][] tresenlinea = new char[mida][mida];
 
         for (int i = 0; i < 3; i++) {
@@ -35,8 +33,6 @@ public class Joc {
             }
             System.out.println(" ");
         }
-        return tresenlinea; */
-
     }
 
     public void jugar(int fila, int columna) {
