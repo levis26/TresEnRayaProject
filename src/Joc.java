@@ -39,8 +39,8 @@ public class Joc {
 
     }
 
-    public static char jugar(short fila, short columna) {
-        throw new UnsupportedOperationException();
+    public void jugar(int fila, int columna) {
+
     }
 
     public static boolean jugadaGuanyadora(short fila, short columna) {

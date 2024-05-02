@@ -9,5 +9,15 @@ class JocTest {
 
     @org.junit.jupiter.api.Test
     void jugar() {
+        Joc joc = new Joc();
+        // Caso de prueba 1: Jugada válida en una celda vacía
+        joc.jugar(0, 0);
+        char[][] expectedTaulell1 = {
+                {'X', '-', '-'},
+                {'-', '-', '-'},
+                {'-', '-', '-'}
+        };
+
+        Assertions.assertEquals(0, joc.getTorn());
     }
 }
