@@ -1,10 +1,11 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 class JocTest {
     @org.junit.jupiter.api.Test
     void novaPartida() {
         Joc joc = new Joc();
         joc.novaPartida();
-        Assertions.assertEquals(1,joc.getTorn());
+        Assertions.assertEquals(0, joc.getTorn());
     }
 
     @org.junit.jupiter.api.Test
@@ -17,7 +18,7 @@ class JocTest {
                 {'-', '-', '-'},
                 {'-', '-', '-'}
         };
-
-        Assertions.assertEquals(0, joc.getTorn());
+        Assertions.assertArrayEquals(expectedTaulell1, joc.getTaulell());
+        Assertions.assertEquals(1, joc.getTorn());
     }
 }

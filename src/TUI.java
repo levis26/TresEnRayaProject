@@ -12,15 +12,13 @@ public class TUI {
     }
 
     public void mostrarTaulell(char[][] taulell, int torn) {
-        System.out.println();
     }
 
-    public int recollirJugada() {
-
-        return 0;
+    public int[] recollirJugada() {
+        int[] jugada = new int[2];
+        return jugada;
     }
 
     public void fiDePartida(int guanyador) {
-
     }
 }
