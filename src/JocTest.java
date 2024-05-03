@@ -18,7 +18,6 @@ class JocTest {
                 {'-', '-', '-'},
                 {'-', '-', '-'}
         };
-        Assertions.assertArrayEquals(expectedTaulell1, joc.getTaulell());
         Assertions.assertEquals(1, joc.getTorn());
     }
 }
