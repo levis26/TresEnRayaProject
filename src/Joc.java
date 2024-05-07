@@ -24,7 +24,7 @@ public class Joc {
                 taulell[i][j] = '-';
             }
         }
-        torn = 0;
+        torn = 1;
     }
 
     public void jugar(int fila, int columna) {
