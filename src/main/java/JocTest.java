@@ -41,7 +41,7 @@ public class JocTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"0,0", "1,1", "2,2","1,0", "1,1","1,2","2,0", "2,1", "2,2"})
+    @CsvSource({"0,0", "0,1", "0,2","1,0", "1,1","1,2","2,0", "2,1", "2,2"})
     void jugar_OK(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
@@ -54,7 +54,7 @@ public class JocTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"0,0", "1,1", "2,2", "1,0", "1,1","1,2", "2,0", "2,1", "2,2"})
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1","1,2", "2,0", "2,1", "2,2"})
     void jugar_rep(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
@@ -76,5 +76,4 @@ public class JocTest {
         }
         Assertions.assertTrue(oFound, "Se esperaba que al menos una casilla estuviera rellenada con 'O'");
     }
-
 }
