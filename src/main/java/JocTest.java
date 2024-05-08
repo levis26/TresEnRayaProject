@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class JocTest {
 
     @ParameterizedTest
-    @CsvSource({"0,0", "1,1", "2,2", "1,0", "1,1","1,2", "2,0", "2,1", "2,2"})
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1","1,2", "2,0", "2,1", "2,2"})
     void novaPartida_OK(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
@@ -17,7 +17,7 @@ public class JocTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"0,0", "1,1", "2,2", "1,0", "1,1", "1,2", "2,0", "2,1", "2,2"})
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1", "1,2", "2,0", "2,1", "2,2"})
     void novaPartida_rep(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
