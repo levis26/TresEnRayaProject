@@ -1,13 +1,7 @@
-
-
 public class Joc {
 
     private char[][] taulell;
     private int torn;
-
-    public Joc() {
-        novaPartida();
-    }
 
     public char[][] getTaulell() {
         return taulell;
@@ -38,4 +32,6 @@ public class Joc {
 
         throw new UnsupportedOperationException();
     }
+
+
 }
