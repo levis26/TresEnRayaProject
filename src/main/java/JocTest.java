@@ -24,8 +24,8 @@ public class JocTest {
         char[][] taulell = joc.getTaulell();
 
         // Verificar que la representación del tablero sea correcta
-        String expectedOutput = "- - - \n- - - \n- - - \n";
-        Assertions.assertEquals(expectedOutput, getTableroRepresentation(taulell));
+        String tablero = "- - - \n- - - \n- - - \n";
+        Assertions.assertEquals(tablero, getTableroRepresentation(taulell));
     }
 
     // Método para obtener la representación del tablero
@@ -39,7 +39,6 @@ public class JocTest {
         }
         return representation;
     }
-
 
     @ParameterizedTest
     @CsvSource({"0,0", "1,1", "2,2","1,0", "1,1","1,2","2,0", "2,1", "2,2"})
