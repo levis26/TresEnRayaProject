@@ -4,32 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="Tracking de ficheros de proyecto." />
+    <list default="true" id="db5bf42f-6b68-4512-9f92-abafa79c9ae4" name="Changes" comment="Adding test jugadaGuanyadora_noGanadora and jugadaGuanyadora_noGanadora_unaCasilla to jugadaGuanyadora() method." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="TUI_Levi" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;levis26&quot;
+  }
 }</component>
-  <component name="ProjectId" id="2fHl2bMTOX2qOYXVhvECcA8CGEC" />
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/levis26/TresEnRayaProject.git&quot;,
+    &quot;accountId&quot;: &quot;b4ada47a-fcb1-4ce1-bc05-83cdac954b36&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;levis26&quot;,
+    &quot;repository&quot;: &quot;TresEnRayaProject&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2fHkW5Gbq8Sc9lAq6ImytU2sAk8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,36 +51,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Joc.executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.JocTest.executor": "Run",
-    "JUnit.JocTest.jugar.executor": "Run",
-    "JUnit.JocTest.novaPartida.executor": "Debug",
+    "JUnit.JocTest.jugadaGuanyadora_ganadoraJugador1.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_ganadoraJugador2.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_noGanadora.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_noGanadora_unaCasilla.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_primeraDiagonal.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_primeraDiagonal_invertida.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_primeraFila.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_segundaDiagonal.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_segundaFila.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_terceraFila.executor": "Run",
+    "JUnit.JocTest.jugar_OK.executor": "Run",
+    "JUnit.JocTest.jugar_rep.executor": "Run",
+    "JUnit.JocTest.novaPartida (1).executor": "Run",
+    "JUnit.JocTest.novaPartida.executor": "Run",
+    "JUnit.JocTest.novaPartida_OK.executor": "Run",
+    "JUnit.JocTest.novaPartida_rep.executor": "Run",
+    "Maven.TresEnRayaProject [compile].executor": "Run",
+    "Maven.TresEnRayaProject [test].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.JocTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TresEnRayaProject" />
@@ -74,20 +92,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JocTest.jugadaGuanyadora_noGanadora_unaCasilla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TresEnRayaProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="jugadaGuanyadora_noGanadora_unaCasilla(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JocTest.jugar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JocTest.jugar_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TresEnRayaProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="jugar" />
+      <option name="METHOD_NAME" value="jugar_OK(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JocTest.novaPartida (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TresEnRayaProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JocTest" />
+      <option name="METHOD_NAME" value="novaPartida(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,7 +126,7 @@
       <module name="TresEnRayaProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="novaPartida" />
+      <option name="METHOD_NAME" value="novaPartida(int,int,char,char,char,char,char,char,char,char,char,char,char,char,char,char,char)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,139 +134,106 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JocTest.novaPartida (1)" />
         <item itemvalue="JUnit.JocTest.novaPartida" />
-        <item itemvalue="JUnit.JocTest.jugar" />
-        <item itemvalue="JUnit.JocTest" />
+        <item itemvalue="JUnit.JocTest.jugar_OK" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.JocTest.novaPartida" />
+        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_noGanadora_unaCasilla" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-c9be4d5f" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="" />
-      <created>1713465678265</created>
+      <changelist id="db5bf42f-6b68-4512-9f92-abafa79c9ae4" name="Changes" comment="" />
+      <created>1713465420189</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713465678265</updated>
+      <updated>1713465420189</updated>
     </task>
-    <task id="LOCAL-00001" summary="He creado el menú">
+    <task id="LOCAL-00001" summary="Adding text about the menu in the game.">
       <option name="closed" value="true" />
-      <created>1713466058758</created>
+      <created>1713466554253</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1713466058758</updated>
+      <updated>1713466554253</updated>
     </task>
-    <task id="LOCAL-00002" summary="Creación de la clase TUI">
+    <task id="LOCAL-00002" summary="Adding methods to class TUI">
       <option name="closed" value="true" />
-      <created>1713972914062</created>
+      <created>1714070907158</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1713972914062</updated>
+      <updated>1714070907158</updated>
     </task>
-    <task id="LOCAL-00003" summary="Creación de la clase Joc">
+    <task id="LOCAL-00003" summary="Adding methods to class TUI and unit test on jugar().">
       <option name="closed" value="true" />
-      <created>1714065638071</created>
+      <created>1714672761458</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1714065638071</updated>
+      <updated>1714672761458</updated>
     </task>
-    <task id="LOCAL-00004" summary="Creación de metodos en la clase Joc">
+    <task id="LOCAL-00004" summary="Adding methods to class TUI and unit test on jugar().">
       <option name="closed" value="true" />
-      <created>1714070748472</created>
+      <created>1715101080735</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1714070748472</updated>
+      <updated>1715101080735</updated>
     </task>
-    <task id="LOCAL-00005" summary="Creación de la prueba para Joc novaPartida y modificación de la clase Joc">
+    <task id="LOCAL-00005" summary="adding maven dependencies.">
       <option name="closed" value="true" />
-      <created>1714500058000</created>
+      <created>1715101952758</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1714500058000</updated>
+      <updated>1715101952758</updated>
     </task>
-    <task id="LOCAL-00006" summary="Prueba de la prueba con codigo">
+    <task id="LOCAL-00006" summary="adding maven dependencies.">
       <option name="closed" value="true" />
-      <created>1714674205003</created>
+      <created>1715103138040</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1714674205003</updated>
+      <updated>1715103138040</updated>
     </task>
-    <task id="LOCAL-00007" summary="He movido el menú del Main a la TUI">
+    <task id="LOCAL-00007" summary="adding maven test on the testJoc file.">
       <option name="closed" value="true" />
-      <created>1715016895649</created>
+      <created>1715104817934</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1715016895649</updated>
+      <updated>1715104817934</updated>
     </task>
-    <task id="LOCAL-00008" summary="He cambiado el nombre del String del metodo de novaPartida a tablero para que sea mas claso">
+    <task id="LOCAL-00008" summary="Adding jugadaGuanyadora() method.">
       <option name="closed" value="true" />
-      <created>1715179137776</created>
+      <created>1715177154227</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1715179137776</updated>
+      <updated>1715177154227</updated>
     </task>
-    <task id="LOCAL-00009" summary="Tracking de ficheros de proyecto.">
+    <task id="LOCAL-00009" summary="Adding test jugadaGuanyadora_noGanadora and jugadaGuanyadora_noGanadora_unaCasilla to jugadaGuanyadora() method.">
       <option name="closed" value="true" />
-      <created>1715180378168</created>
+      <created>1715182689014</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1715180378168</updated>
+      <updated>1715182689014</updated>
     </task>
     <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="TUI_Irene" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="He creado el menú" />
-    <MESSAGE value="Creación de la clase TUI" />
-    <MESSAGE value="Creación de la clase Joc" />
-    <MESSAGE value="Creación de metodos en la clase Joc" />
-    <MESSAGE value="Creación de la prueba para Joc novaPartida y modificación de la clase Joc" />
-    <MESSAGE value="Prueba de la prueba con codigo" />
-    <MESSAGE value="He movido el menú del Main a la TUI" />
-    <MESSAGE value="He cambiado el nombre del String del metodo de novaPartida a tablero para que sea mas claso" />
-    <MESSAGE value="Tracking de ficheros de proyecto." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tracking de ficheros de proyecto." />
+    <MESSAGE value="Adding text about the menu in the game." />
+    <MESSAGE value="Adding methods to class TUI" />
+    <MESSAGE value="Adding methods to class TUI and unit test on jugar()." />
+    <MESSAGE value="adding maven dependencies." />
+    <MESSAGE value="adding maven test on the testJoc file." />
+    <MESSAGE value="Adding jugadaGuanyadora() method." />
+    <MESSAGE value="Adding test jugadaGuanyadora_noGanadora and jugadaGuanyadora_noGanadora_unaCasilla to jugadaGuanyadora() method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding test jugadaGuanyadora_noGanadora and jugadaGuanyadora_noGanadora_unaCasilla to jugadaGuanyadora() method." />
   </component>
 </project>
