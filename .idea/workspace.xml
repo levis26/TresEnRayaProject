@@ -7,6 +7,7 @@
     <list default="true" id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="Tracking de ficheros de proyecto.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JocTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JocTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JocTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,8 @@
     "Application.Main.executor": "Debug",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.JocTest.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria.executor": "Run",
+    "JUnit.JocTest.jugadaGuanyadora_unaOcupada.executor": "Run",
     "JUnit.JocTest.jugar.executor": "Run",
     "JUnit.JocTest.jugar_jugador2.executor": "Run",
     "JUnit.JocTest.novaPartida.executor": "Debug",
@@ -71,16 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JocTest.jugar_jugador2">
-    <configuration name="JocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TresEnRayaProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JocTest.jugadaGuanyadora_unaOcupada">
     <configuration name="JocTest.jugadaGuanyadora_Jugador1Gana_Fila0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TresEnRayaProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -96,6 +90,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
       <option name="METHOD_NAME" value="jugadaGuanyadora_Jugador1Gana_VerticalSecundaria(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JocTest.jugadaGuanyadora_unaOcupada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TresEnRayaProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JocTest" />
+      <option name="METHOD_NAME" value="jugadaGuanyadora_unaOcupada(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,9 +127,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JocTest.jugar_jugador2" />
-        <item itemvalue="JUnit.JocTest" />
+        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_unaOcupada" />
         <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria" />
+        <item itemvalue="JUnit.JocTest.jugar_jugador2" />
         <item itemvalue="JUnit.JocTest.jugador1Gana_en_VerticalSecundaria" />
         <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_Fila0" />
       </list>
@@ -265,6 +269,7 @@
     <MESSAGE value="He cambiado el nombre del String del metodo de novaPartida a tablero para que sea mas claso" />
     <MESSAGE value="Tracking de ficheros de proyecto." />
     <MESSAGE value="Tracked clases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tracked clases" />
+    <MESSAGE value="He vuelto a subir la jugada ganadora del jugador 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="He vuelto a subir la jugada ganadora del jugador 2" />
   </component>
 </project>
