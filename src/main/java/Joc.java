@@ -29,13 +29,28 @@ public class Joc {
     }
 
     public boolean jugadaGuanyadora(int fila, int columna) {
-        char simbol = (torn % 2 == 0) ? 'X' : 'O';
-        return (taulell[fila][columna] == simbol &&
-                ((taulell[fila][0] == simbol && taulell[fila][1] == simbol && taulell[fila][2] == simbol) ||
-                        (taulell[0][columna] == simbol && taulell[1][columna] == simbol && taulell[2][columna] == simbol) ||
-                        (fila == columna && taulell[0][0] == simbol && taulell[1][1] == simbol && taulell[2][2] == simbol) ||
-                        (fila + columna == 2 && taulell[0][2] == simbol && taulell[1][1] == simbol && taulell[2][0] == simbol)));
+        char simbol = taulell[fila][columna];
+
+        // Comprova fila
+        if (taulell[fila][0] == simbol && taulell[fila][1] == simbol && taulell[fila][2] == simbol) {
+            return true;
+        }
+
+        // Comprova columna
+        if (taulell[0][columna] == simbol && taulell[1][columna] == simbol && taulell[2][columna] == simbol) {
+            return true;
+        }
+
+        // Comprova diagonal principal
+        if (fila == columna && taulell[0][0] == simbol && taulell[1][1] == simbol && taulell[2][2] == simbol) {
+            return true;
+        }
+
+        // Comprova diagonal secundaria
+        if (fila + columna == 2 && taulell[0][2] == simbol && taulell[1][1] == simbol && taulell[2][0] == simbol) {
+            return true;
+        }
+
+        return false;
     }
-
-
 }
