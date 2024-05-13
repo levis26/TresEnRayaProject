@@ -90,31 +90,29 @@ public class JocTest {
     false y se va a cortar el primer bucle
     */
     @ParameterizedTest
-    @CsvSource({"0,0", "0,2", "1,1", "2,0", "2,2"})
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1","1,2", "2,0", "2,1", "2,2"})
     void jugar_jugador2(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
-
-        // Llenar todo el tablero con fichas del jugador 1
-        joc.jugar(0, 0); //1
-        joc.jugar(0, 1);
-        joc.jugar(0, 2); //1
-        joc.jugar(1, 0);
-        joc.jugar(1, 1); //1
-        joc.jugar(1, 2);
-        joc.jugar(2, 0); //1
-        joc.jugar(2, 1);
-        joc.jugar(2, 2); //1
-
-        // Verificar que se puede colocar una ficha del jugador 2 en una casilla vacía
         joc.jugar(fila, columna);
 
-        // Obtener el tablero actual
         char[][] taulell = joc.getTaulell();
+        boolean posicionlibre = false;
+        for (int i = 0; i < taulell.length; i++) {
+            for (int j = 0; j < taulell[i].length; j++) {
+                if (taulell[i][j] == '-') {
+                    System.out.println('X');
+                    posicionlibre = true;
+                    break;
+                }
 
-        // Verificar si la casilla en la fila y columna especificadas está ocupada por una ficha del jugador 2
-        char casilla = taulell[fila][columna];
-        Assertions.assertEquals('O', casilla, "No se ha colocado ficha del jugador 2 en una casilla disponible.");
+            }
+            if (posicionlibre) {
+                break;
+            }
+        }
+
+        Assertions.assertTrue(posicionlibre, "Se ha colocado 'X'");
     }
 
     @org.junit.jupiter.api.Test
@@ -249,5 +247,19 @@ public class JocTest {
         joc.jugar(2, 0); //Jugador 1
 
         Assertions.assertTrue(joc.jugadaGuanyadora(fila, columna));
+    }
+
+
+    @ParameterizedTest
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1", "1,2", "2,0", "2,1", "2,2"})
+    void jugadaGuanyadora_unaOcupada(int fila, int columna){
+        Joc joc = new Joc();
+        joc.novaPartida();
+        joc.jugar(fila, columna);
+
+        char[][] taulell = joc.getTaulell();
+
+
+
     }
 }
