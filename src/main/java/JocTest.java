@@ -219,7 +219,7 @@ public class JocTest {
     }
 
     @org.junit.jupiter.api.Test
-    void jugador1Gana_en_VerticalSecundaria() {
+    void jugador1Gana_en_DiagonalSecundaria() {
         Joc joc = new Joc();
         joc.novaPartida();
 
@@ -235,7 +235,7 @@ public class JocTest {
 
     @ParameterizedTest
     @CsvSource({"0,2", "1,1", "2,0"})
-    void jugadaGuanyadora_Jugador1Gana_VerticalSecundaria(int fila, int columna) {
+    void jugadaGuanyadora_Jugador1Gana_DiagonalSecundaria(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
 
