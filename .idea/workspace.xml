@@ -261,6 +261,7 @@
     <MESSAGE value="He movido el menú del Main a la TUI" />
     <MESSAGE value="He cambiado el nombre del String del metodo de novaPartida a tablero para que sea mas claso" />
     <MESSAGE value="Tracking de ficheros de proyecto." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tracking de ficheros de proyecto." />
+    <MESSAGE value="Tracked clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tracked clases" />
   </component>
 </project>
