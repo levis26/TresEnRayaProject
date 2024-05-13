@@ -3,6 +3,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class JocTest {
 
     /*
@@ -26,33 +30,18 @@ public class JocTest {
      */
     @ParameterizedTest
     @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1", "1,2", "2,0", "2,1", "2,2"})
-    void novaPartida_rep(int fila, int columna) {
+    void novaPartida_representacion(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
-        char[][] taulell = joc.getTaulell();
 
         // Verificar que la representación del tablero sea correcta
-        String tablero = "- - - \n- - - \n- - - \n";
-        Assertions.assertEquals(tablero, getTableroRepresentation(taulell));
+        String expectedRepresentation = "---\n---\n---";
+        String actualRepresentation = Arrays.deepToString(joc.getTaulell()).replace("], ", "\n").
+                                      replace("[[", "").replace("[", "").
+                                      replace("]", "").replace(",", "").replace(" ", "");
+
+        Assertions.assertEquals(expectedRepresentation, actualRepresentation);
     }
-
-    // Método para obtener la representación del tablero
-    /* esto hay que pasarlo a otra clase, ya que esta es solor para test */
-    private String getTableroRepresentation(char[][] taulell) {
-
-
-        String representation = "";
-        for (int i = 0; i < taulell.length; i++) {
-            for (int j = 0; j < taulell[i].length; j++) {
-                representation += taulell[i][j] + " ";
-
-            }
-            representation.append("\n");
-        }
-        return representation.toString();
-    }
-
-
 
     /*
     Esto lo que nos esta haciendo es primero recorrer todas las posiciones del tablero
@@ -80,29 +69,19 @@ public class JocTest {
     */
 
     @ParameterizedTest
-
-    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1","1,2", "2,0", "2,1", "2,2"})
-    void jugar_rep(int fila, int columna) {
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1", "1,2", "2,0", "2,1", "2,2"})
+    void jugar_representacion_jugador1(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
         joc.jugar(fila, columna);
 
-        // Verificar que al menos una casilla se ha rellenado con 'O'
+        // Verificar que la casilla seleccionada se ha rellenado con 'O'
         char[][] taulell = joc.getTaulell();
-        boolean oFound = false;
-        for (char[] filaTablero : taulell) {
-            for (char celda : filaTablero) {
-                if (celda == 'O') {
-                    oFound = true;
-                    break;
-                }
-            }
-            if (oFound) {
-                break;
-            }
-        }
-        Assertions.assertTrue(oFound, "Se esperaba que al menos una casilla estuviera rellenada con 'O'");
+        boolean oFounded = taulell[fila][columna] == 'O';
+
+        Assertions.assertTrue(oFounded, "Se esperaba que la casilla seleccionada estuviera rellenada con 'O'");
     }
+
 
     /*
     Esto lo que nos va a hacer es buscar en el taulell de la posición [i][j] si hay un '-',
@@ -111,28 +90,164 @@ public class JocTest {
     false y se va a cortar el primer bucle
     */
     @ParameterizedTest
-    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1","1,2", "2,0", "2,1", "2,2"})
-    void jugar_jugador2(int fila, int columna){
+    @CsvSource({"0,0", "0,2", "1,1", "2,0", "2,2"})
+    void jugar_jugador2(int fila, int columna) {
         Joc joc = new Joc();
         joc.novaPartida();
+
+        // Llenar todo el tablero con fichas del jugador 1
+        joc.jugar(0, 0); //1
+        joc.jugar(0, 1);
+        joc.jugar(0, 2); //1
+        joc.jugar(1, 0);
+        joc.jugar(1, 1); //1
+        joc.jugar(1, 2);
+        joc.jugar(2, 0); //1
+        joc.jugar(2, 1);
+        joc.jugar(2, 2); //1
+
+        // Verificar que se puede colocar una ficha del jugador 2 en una casilla vacía
         joc.jugar(fila, columna);
 
+        // Obtener el tablero actual
         char[][] taulell = joc.getTaulell();
-        boolean posicionlibre = false;
-        for (int i = 0; i < taulell.length; i++) {
-            for (int j = 0; j < taulell[i].length; j++) {
-                if (taulell[i][j] == '-'){
-                    System.out.println('X');
-                    posicionlibre = true;
-                    break;
-                }
 
-            }
-            if (posicionlibre) {
-                break;
-            }
-        }
+        // Verificar si la casilla en la fila y columna especificadas está ocupada por una ficha del jugador 2
+        char casilla = taulell[fila][columna];
+        Assertions.assertEquals('O', casilla, "No se ha colocado ficha del jugador 2 en una casilla disponible.");
+    }
 
-        Assertions.assertTrue(posicionlibre, "Se ha colocado 'X'");
+    @org.junit.jupiter.api.Test
+    void jugador1Gana_en_DiagonalPrincipal() {
+        // Crear una instancia del juego
+        Joc joc = new Joc();
+        // Lanzamos un nuevo tablero
+        joc.novaPartida();
+
+        // Realizar las jugadas necesarias para que el jugador 1 gane rellenando la diagonal principal
+        joc.jugar(0, 0); // Jugador 1
+        joc.jugar(0, 1); // Jugador 2
+        joc.jugar(1, 1); // Jugador 1
+        joc.jugar(1, 2); // Jugador 2
+        joc.jugar(2, 2); // Jugador 1
+
+        // Verificar que la jugada ganadora se detecta correctamente
+        boolean resultado = joc.jugadaGuanyadora(0, 0);
+        Assertions.assertTrue(resultado, "La jugada ganadora en la diagonal principal no se detectó correctamente.");
+    }
+
+    @ParameterizedTest
+    @CsvSource({"0,0", "1,1", "2,2"})
+    void jugadaGuanyadora_Jugador1Gana_diagonal(int fila, int columna) {
+        Joc joc = new Joc();
+        joc.novaPartida();
+
+        // Realizar las jugadas necesarias para que el jugador 1 gane
+        joc.jugar(0, 0); // Jugador 1
+        joc.jugar(0, 1); // Jugador 2
+        joc.jugar(1, 1); // Jugador 1
+        joc.jugar(1, 2); // Jugador 2
+        joc.jugar(2, 2); // Jugador 1
+
+        // Verificar si la jugada actual hace que el jugador 1 gane
+        Assertions.assertTrue(joc.jugadaGuanyadora(fila, columna), "El jugador 1 no ganó la partida en la diagonal principal.");
+    }
+
+    @org.junit.jupiter.api.Test
+    void jugador1Gana_en_Fila0() {
+        // Crear una instancia del juego
+        Joc joc = new Joc();
+        // Lanzar un nuevo tablero
+        joc.novaPartida();
+
+        // Realizar las jugadas necesarias para que el jugador 1 gane rellenando una fila
+        joc.jugar(0, 0); // Jugador 1
+        joc.jugar(1, 0); // Jugador 2
+        joc.jugar(0, 1); // Jugador 1
+        joc.jugar(1, 1); // Jugador 2
+        joc.jugar(0, 2); // Jugador 1
+
+        // Verificar que la jugada ganadora se detecta correctamente
+        Assertions.assertTrue(joc.jugadaGuanyadora(0, 0));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"0,0", "0,1", "0,2"}) // Fila 0
+    void jugadaGuanyadora_Jugador1Gana_Fila0(int fila, int columna) {
+        Joc joc = new Joc();
+        joc.novaPartida();
+        char[][] taulell = joc.getTaulell();
+
+        // Realizar las jugadas necesarias para que el jugador 1 gane rellenando una fila
+        joc.jugar(0, 0); // Actualiza el tablero con la jugada del jugador 1
+        joc.jugar(1, 0); // Actualiza el tablero con la jugada del jugador 2
+        joc.jugar(0, 1); // Actualiza el tablero con la jugada del jugador 1
+        joc.jugar(1, 1); // Actualiza el tablero con la jugada del jugador 2
+        joc.jugar(0, 2); // Actualiza el tablero con la jugada del jugador 1
+
+        // Verificar si la jugada actual hace que el jugador 1 gane
+        Assertions.assertTrue(joc.jugadaGuanyadora(0, columna));
+    }
+
+    @org.junit.jupiter.api.Test
+    void jugador1Gana_en_Columna1() {
+        Joc joc = new Joc();
+        joc.novaPartida();
+
+        // Llenar la columna 1 con 'O'
+        joc.jugar( 0, 1); //Jugador 1
+        joc.jugar( 0, 0); //Jugador 2
+        joc.jugar( 1, 1); //Jugador 1
+        joc.jugar( 2, 2); //Jugador 2
+        joc.jugar( 2, 1); //Jugador 1
+
+        Assertions.assertTrue(joc.jugadaGuanyadora( 0, 1), "La jugada ganadora en la columna 1 no se detectó correctamente.");
+    }
+
+    @ParameterizedTest
+    @CsvSource({"0", "1", "2"}) // Filas
+    void jugadaGuanyadora_Jugador1Gana_Columna1(short fila) {
+        Joc joc = new Joc();
+        joc.novaPartida();
+
+        // Llenar la columna 1 con 'O'
+        joc.jugar( 0, 1); //Jugador 1
+        joc.jugar( 0, 0); //Jugador 2
+        joc.jugar( 1, 1); //Jugador 1
+        joc.jugar( 2, 2); //Jugador 2
+        joc.jugar( 2, 1); //Jugador 1
+
+        Assertions.assertTrue(joc.jugadaGuanyadora(fila, 1), "La jugada ganadora en la columna 1 no se detectó correctamente.");
+    }
+
+    @org.junit.jupiter.api.Test
+    void jugador1Gana_en_VerticalSecundaria() {
+        Joc joc = new Joc();
+        joc.novaPartida();
+
+        // Llenar la vertical secundaria con 'O' (jugador 1)
+        joc.jugar(0, 2); //Jugador 1
+        joc.jugar(0, 0); //Jugador 2
+        joc.jugar(1, 1); //Jugador 1
+        joc.jugar(2, 2); //Jugador 2
+        joc.jugar(2, 0); //Jugador 1
+
+        Assertions.assertTrue(joc.jugadaGuanyadora(1, 1), "La jugada ganadora en la vertical secundaria no se detectó correctamente.");
+    }
+
+    @ParameterizedTest
+    @CsvSource({"0,2", "1,1", "2,0"})
+    void jugadaGuanyadora_Jugador1Gana_VerticalSecundaria(int fila, int columna) {
+        Joc joc = new Joc();
+        joc.novaPartida();
+
+        // Llenar la vertical secundaria con 'O' (jugador 1)
+        joc.jugar(0, 2); //Jugador 1
+        joc.jugar(0, 0); //Jugador 2
+        joc.jugar(1, 1); //Jugador 1
+        joc.jugar(2, 2); //Jugador 2
+        joc.jugar(2, 0); //Jugador 1
+
+        Assertions.assertTrue(joc.jugadaGuanyadora(fila, columna));
     }
 }
