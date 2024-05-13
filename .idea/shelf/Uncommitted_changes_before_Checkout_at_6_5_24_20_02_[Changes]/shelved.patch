@@ -1,0 +1,46 @@
+Index: src/JocTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.Assertions;\nimport org.junit.jupiter.api.Test;\nclass JocTest {\n    @org.junit.jupiter.api.Test\n    void novaPartida() {\n        Joc joc = new Joc();\n        joc.novaPartida();\n        Assertions.assertEquals(0, joc.getTorn());\n    }\n\n    @org.junit.jupiter.api.Test\n    void jugar() {\n        Joc joc = new Joc();\n        // Caso de prueba 1: Jugada válida en una celda vacía\n        joc.jugar(0, 0);\n        char[][] expectedTaulell1 = {\n                {'X', '-', '-'},\n                {'-', '-', '-'},\n                {'-', '-', '-'}\n        };\n        Assertions.assertEquals(1, joc.getTorn());\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/JocTest.java b/src/JocTest.java
+--- a/src/JocTest.java	
++++ b/src/JocTest.java	
+@@ -1,3 +1,6 @@
++import org.junit.jupiter.params.ParameterizedTest;
++import org.junit.jupiter.params.provider.CsvSource;
++
+ import org.junit.jupiter.api.Assertions;
+ import org.junit.jupiter.api.Test;
+ class JocTest {
+@@ -20,4 +23,5 @@
+         };
+         Assertions.assertEquals(1, joc.getTorn());
+     }
++
+ }
+\ No newline at end of file
+Index: src/TUI.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\n\npublic class TUI {\n    private Scanner sc;\n\n    public int mostrarMenu() {\n        System.out.println(\"1. Nova partida\");\n        System.out.println(\"2. Carregar partida\");\n        System.out.println(\"3. Configuració\");\n        System.out.println(\"4. Sortir\");\n        return sc.nextInt();\n    }\n\n    public void mostrarTaulell(char[][] taulell, int torn) {\n    }\n\n    public int[] recollirJugada() {\n        int[] jugada = new int[2];\n        return jugada;\n    }\n\n    public void fiDePartida(int guanyador) {\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/TUI.java b/src/TUI.java
+--- a/src/TUI.java	
++++ b/src/TUI.java	
+@@ -16,6 +16,11 @@
+ 
+     public int[] recollirJugada() {
+         int[] jugada = new int[2];
++        sc = new Scanner(System.in);
++        System.out.print("Introduce la fila (0-2): ");
++        jugada[0] = sc.nextInt();
++        System.out.print("Introduce la columna (0-2): ");
++        jugada[1] = sc.nextInt();
+         return jugada;
+     }
+ 

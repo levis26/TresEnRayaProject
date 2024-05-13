@@ -1,0 +1,38 @@
+Index: src/Joc.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import jdk.jshell.spi.ExecutionControl;\n\npublic class Joc {\n\n    private char taulell;\n    private short torn;\n\n    public char getTaulell() {\n        return taulell;\n    }\n\n    public short getTorn() {\n        return torn;\n    }\n\n    public void novaPartida() {\n        torn = 1;\n\n        //empezamos a rellenar el tablero\n\n        int mida = 3;\n        char[][] tresenlinea = new char[mida][mida];\n\n        for (int i = 0; i < 3; i++) {\n            for (int j = 0; j < 3; j++) {\n                tresenlinea[i][j] = '_';\n            }\n        }\n\n        for (int i = 0; i < 3; i++) {\n            for (int j = 0; j < 3; j++) {\n                System.out.print(tresenlinea[i][j] + \" \");\n            }\n            System.out.println(\" \");\n        }\n    }\n\n    public void jugar(int fila, int columna) {\n\n    }\n\n    public static boolean jugadaGuanyadora(short fila, short columna) {\n        throw new UnsupportedOperationException();\n    }\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Joc.java b/src/Joc.java
+--- a/src/Joc.java	(revision e4e4b260445190d9421af52cf0cfa482c1049ddf)
++++ b/src/Joc.java	(date 1715015542506)
+@@ -3,13 +3,13 @@
+ public class Joc {
+ 
+     private char taulell;
+-    private short torn;
++    private int torn;
+ 
+     public char getTaulell() {
+         return taulell;
+     }
+ 
+-    public short getTorn() {
++    public int getTorn() {
+         return torn;
+     }
+ 
+@@ -37,6 +37,11 @@
+ 
+     public void jugar(int fila, int columna) {
+ 
++        int torn = 0;
++        if (taulell[fila][columna] == '-') {
++            taulell[fila][columna] = (torn % 2 == 0) ? 'X' : 'O';
++            torn++;
++        }
+     }
+ 
+     public static boolean jugadaGuanyadora(short fila, short columna) {
