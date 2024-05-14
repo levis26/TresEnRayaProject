@@ -12,6 +12,27 @@ public class TUI {
             System.out.println("4. Sortir");
             System.out.print("Selecciona una opció: ");
             opcion = sc.nextInt();
+
+        return opcion;
+    }
+
+    public int medidaTablero (){
+
+        int medida = 3;
+        int opcion;
+
+        System.out.println("Quieres cambiar la medida del tablero?");
+        System.out.println("1. Si");
+            System.out.println("2. No");
+            opcion = sc.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("Introduce tu nueva medida, del 3 al 10");
+                    medida = sc.nextInt();
+                    break;
+            }
+        return medida;
         }
         while (opcion != 4);
         return opcion;

@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="Named correctly. test unit and parat">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_5_24_19_36_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_5_24_19_36__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_24_19_12_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_24_19_12__Changes_.xml" beforeDir="false" />
+    <list default="true" id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="Menú de la opción confituracion TUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Joc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Joc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JocTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Joc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Joc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +30,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TUI_Levi" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "levis26"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/levis26/TresEnRayaProject.git",
-    "accountId": "b4ada47a-fcb1-4ce1-bc05-83cdac954b36"
-  }
-}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -58,9 +47,11 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Joc.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;JUnit.JocTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JocTest.jugadaGuanyadora_unaOcupada.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.JocTest.jugar.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.JocTest.jugar_jugador2.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.JocTest.novaPartida.executor&quot;: &quot;Debug&quot;,
@@ -72,7 +63,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TUI__Levi&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TUI__Irene&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -88,22 +79,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JocTest.jugar_jugador2">
-    <configuration name="JocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TresEnRayaProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JocTest.jugadaGuanyadora_Jugador1Gana_Fila0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TresEnRayaProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="jugadaGuanyadora_Jugador1Gana_Fila0(int,int)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,6 +92,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
       <option name="METHOD_NAME" value="jugadaGuanyadora_Jugador1Gana_VerticalSecundaria(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JocTest.jugadaGuanyadora_unaOcupada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TresEnRayaProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JocTest" />
+      <option name="METHOD_NAME" value="jugadaGuanyadora_unaOcupada(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,13 +129,21 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.JocTest.jugar_jugador2" />
-        <item itemvalue="JUnit.JocTest" />
-        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria" />
         <item itemvalue="JUnit.JocTest.jugador1Gana_en_VerticalSecundaria" />
-        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_Fila0" />
+        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_unaOcupada" />
+        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-c9be4d5f" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -237,7 +234,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715617526586</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Test de jugada ganadora con una casilla ocupada">
+      <option name="closed" value="true" />
+      <created>1715622248261</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715622248261</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Menú de la opción confituracion TUI">
+      <option name="closed" value="true" />
+      <created>1715683190675</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715683190675</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +287,8 @@
     <MESSAGE value="He cambiado el nombre del String del metodo de novaPartida a tablero para que sea mas claso" />
     <MESSAGE value="Tracking de ficheros de proyecto." />
     <MESSAGE value="Tracked clases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tracked clases" />
+    <MESSAGE value="He vuelto a subir la jugada ganadora del jugador 2" />
+    <MESSAGE value="Menú de la opción confituracion TUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menú de la opción confituracion TUI" />
   </component>
 </project>

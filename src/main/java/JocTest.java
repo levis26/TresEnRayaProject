@@ -102,7 +102,7 @@ public class JocTest {
             for (int j = 0; j < taulell[i].length; j++) {
                 if (taulell[i][j] == '-') {
                     System.out.println('X');
-                    posicionlibre = true;
+                    if (posicionlibre = true);
                     break;
                 }
 
@@ -258,8 +258,26 @@ public class JocTest {
         joc.jugar(fila, columna);
 
         char[][] taulell = joc.getTaulell();
+        boolean posicionLibre = false;
 
+        for (int i = 0; i < taulell.length; i++) {
+            for (int j = 0; j < taulell[i].length; j++) {
+                if (taulell[i][j] == 'X') {
+                    if (posicionLibre == false);
+                    break;
+                }
+                if (!posicionLibre);
+                System.out.println(taulell[i][j]);
+                break;
+            }
+        }
+        Assertions.assertFalse(posicionLibre, "Hola");
+    }
 
+    @ParameterizedTest
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1", "1,2", "2,0", "2,1", "2,2"})
+    void colocarFitxaPosicioLliure (int fila, int columna){
 
     }
+
 }
