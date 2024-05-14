@@ -16,25 +16,8 @@ public class TUI {
             System.out.print("Selecciona una opció: ");
             opcion = sc.nextInt();
 
-        switch (opcion) {
-            case 1:
-                joc.novaPartida();
-                break;
-            case 2:
-                System.out.println("Benvingut a la teva partida anterior.");
-                break;
-            case 3:
-                System.out.println("Aqui pots fer la configuració del joc.");
-                break;
-            case 4:
-                System.out.println("Adéu!!");
-                break;
-            default:
-                System.out.println("Opció invàlica");
-        }
-        while (opcion != 4);
-        return 0;
-}
+        return opcion;
+    }
 
     public int medidaTablero (){
         

@@ -18,6 +18,7 @@ public class Joc {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 taulell[i][j] = '-';
+                System.out.println(taulell[i][j]);
             }
         }
         torn = 1;

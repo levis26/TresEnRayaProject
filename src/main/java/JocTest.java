@@ -273,4 +273,11 @@ public class JocTest {
         }
         Assertions.assertFalse(posicionLibre, "Hola");
     }
+
+    @ParameterizedTest
+    @CsvSource({"0,0", "0,1", "0,2", "1,0", "1,1", "1,2", "2,0", "2,1", "2,2"})
+    void colocarFitxaPosicioLliure (int fila, int columna){
+
+    }
+
 }
