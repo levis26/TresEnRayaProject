@@ -3,10 +3,7 @@ import java.util.Scanner;
 public class TUI {
     Scanner sc = new Scanner(System.in);
     public int mostrarMenu() {
-
-        Joc joc = new Joc();
         int opcion;
-
         do {
             System.out.println("\nMenú:");
             System.out.println("1. Nova partida");
@@ -15,26 +12,9 @@ public class TUI {
             System.out.println("4. Sortir");
             System.out.print("Selecciona una opció: ");
             opcion = sc.nextInt();
-
-            switch (opcion) {
-                case 1:
-                    joc.novaPartida();
-                    break;
-                case 2:
-                    System.out.println("Benvingut a la teva partida anterior.");
-                    break;
-                case 3:
-                    System.out.println("Aqui pots fer la configuració del joc.");
-                    break;
-                case 4:
-                    System.out.println("Adéu!!");
-                    break;
-                default:
-                    System.out.println("Opció invàlica");
-            }
         }
         while (opcion != 4);
-        return 0;
+        return opcion;
     }
 
     public void mostrarTaulell(char[][] taulell, int torn) {
