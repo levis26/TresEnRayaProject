@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="Tracking de ficheros de proyecto.">
+    <list default="true" id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="Test de jugada ganadora con una casilla ocupada">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_5_24_19_36_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_5_24_19_36__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_24_19_12_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_24_19_12__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JocTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Joc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Joc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Joc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Joc.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JocTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JocTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TUI_Levi" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,33 +49,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Joc.executor": "Run",
-    "Application.Main.executor": "Debug",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.JocTest.executor": "Run",
-    "JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria.executor": "Run",
-    "JUnit.JocTest.jugadaGuanyadora_unaOcupada.executor": "Run",
-    "JUnit.JocTest.jugar.executor": "Run",
-    "JUnit.JocTest.jugar_jugador2.executor": "Run",
-    "JUnit.JocTest.novaPartida.executor": "Debug",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Joc.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.JocTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JocTest.jugadaGuanyadora_unaOcupada.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JocTest.jugar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JocTest.jugar_jugador2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JocTest.novaPartida.executor&quot;: &quot;Debug&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TUI__Irene&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -74,13 +84,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JocTest.jugadaGuanyadora_unaOcupada">
-    <configuration name="JocTest.jugadaGuanyadora_Jugador1Gana_Fila0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TresEnRayaProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="jugadaGuanyadora_Jugador1Gana_Fila0(int,int)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_unaOcupada" />
-        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.JocTest.jugar_jugador2" />
         <item itemvalue="JUnit.JocTest.jugador1Gana_en_VerticalSecundaria" />
-        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_Fila0" />
+        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_unaOcupada" />
+        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715617526586</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Test de jugada ganadora con una casilla ocupada">
+      <option name="closed" value="true" />
+      <created>1715622248261</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715622248261</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

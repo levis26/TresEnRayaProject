@@ -6,5 +6,7 @@ public class Main {
 
         tui.mostrarMenu();
 
+        tui.medidaTablero();
+        joc.novaPartida();
     }
 }
