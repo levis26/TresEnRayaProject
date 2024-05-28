@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21686877-45c3-4021-836d-e4abc5b1a9ea" name="Changes" comment="Menú de la opción confituracion TUI">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_5_24_20_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_5_24_20_21__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_24_20_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_24_20_02__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_5_24_19_31_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_5_24_19_31__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_5_24_20_02_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_5_24_20_02__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_5_24_16_03_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_5_24_16_03__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_5_24_16_04_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_5_24_16_04__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Joc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Joc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JocTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Joc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Joc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +71,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TUI__Irene&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TUI__Levi&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -79,7 +87,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.JocTest.jugar_OK">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TresEnRayaProject" />
@@ -87,41 +95,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TresEnRayaProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="jugadaGuanyadora_Jugador1Gana_VerticalSecundaria(int,int)" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JocTest.jugar_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TresEnRayaProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JocTest" />
+      <option name="METHOD_NAME" value="jugar_OK(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JocTest.jugadaGuanyadora_unaOcupada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JocTest.jugar_representacion_jugador1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TresEnRayaProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="jugadaGuanyadora_unaOcupada(int,int)" />
+      <option name="METHOD_NAME" value="jugar_representacion_jugador1(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JocTest.jugador1Gana_en_VerticalSecundaria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JocTest.testLlistarPartidesGuardades" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TresEnRayaProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="jugador1Gana_en_VerticalSecundaria" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JocTest.jugar_jugador2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TresEnRayaProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JocTest" />
-      <option name="METHOD_NAME" value="jugar_jugador2(int,int)" />
+      <option name="METHOD_NAME" value="testLlistarPartidesGuardades" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JocTest.jugar_OK" />
+        <item itemvalue="JUnit.JocTest.jugar_representacion_jugador1" />
+        <item itemvalue="JUnit.JocTest.testLlistarPartidesGuardades" />
+        <item itemvalue="JUnit.JocTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.JocTest.jugar_jugador2" />
-        <item itemvalue="JUnit.JocTest.jugador1Gana_en_VerticalSecundaria" />
-        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_unaOcupada" />
-        <item itemvalue="JUnit.JocTest.jugadaGuanyadora_Jugador1Gana_VerticalSecundaria" />
       </list>
     </recent_temporary>
   </component>
